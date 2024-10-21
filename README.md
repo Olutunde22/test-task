@@ -49,6 +49,7 @@ To run this project locally, follow these steps:
   ```
 
 ### Folder Structure
+```bash
 ├── public              # Static assets
 ├── src
 │   ├── components      # React components
@@ -62,3 +63,4 @@ To run this project locally, follow these steps:
 ├── tailwind.config.js  # Tailwind CSS configuration
 ├── vite.config.ts      # Vite configuration
 └── README.md           # This file
+```
