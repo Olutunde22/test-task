@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite - Todo Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **Todo Application** that allows users to **add**, **edit**, and **delete** todos. The project is built using modern front-end tools and technologies such as Vite, React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new todos to the list.
+- Edit existing todos.
+- Delete todos from the list.
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **[Vite](https://vitejs.dev/)**: Next Generation Frontend Tooling
+- **[React](https://reactjs.org/)**: A JavaScript library for building user interfaces
+- **[TypeScript](https://www.typescriptlang.org/)**: Typed superset of JavaScript that compiles to plain JavaScript
+- **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework for rapidly building custom designs
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To run this project locally, follow these steps:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Node.js and npm should be installed. You can download them from [here](https://nodejs.org/).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Olutunde22/test-task.git
+   cd todo-app
+   ```
+2. Install project dependencies
+  ```bash
+    yarn install
+  ```
+3. Running the App:
+  ```bash
+    yarn dev
+  ```
+4. Building the App
+  ```bash
+    yarn build
+  ```
+5. Running Built version
+  ```bash
+    yarn preview
+  ```
+
+### Folder Structure
+├── public              # Static assets
+├── src
+│   ├── components      # React components
+│   ├── assets          # Images, logos, icons, etc.
+│   ├── index.css       # Tailwind CSS styles and configurations
+│   ├── App.tsx         # Main app component
+│   ├── main.tsx        # App entry point
+│   └── ...             # Other files
+├── package.json        # Project metadata and dependencies
+├── tsconfig.json       # TypeScript configuration
+├── tailwind.config.js  # Tailwind CSS configuration
+├── vite.config.ts      # Vite configuration
+└── README.md           # This file
